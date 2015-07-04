@@ -1,0 +1,8 @@
+<div style="margin-top:50px;color:#CFCFCF;">
+  <%= form_for @visits, :remote => true do |f| %>
+    <%= render "form", :f => f %>
+  <% end %>
+
+  <div id="display-result" class="time-container">
+  </div>
+</div>

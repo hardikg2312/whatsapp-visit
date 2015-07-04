@@ -1,0 +1,9 @@
+<% if @error.present? %>
+  $('#display-result').empty().append("<%= @error %>");
+<% else %>
+  <% if @time.present? %>
+    $('#display-result').empty().append("<%= days_ago(@time) %>");
+  <% else %>
+    $('#display-result').empty().append("Never Seen Profile");
+  <% end %>
+<% end %>

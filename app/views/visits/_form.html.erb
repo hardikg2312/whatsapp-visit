@@ -1,0 +1,26 @@
+<table class="main-table">
+  <tr>
+    <td class="pad10 font-text">Enter Your Mobile Number</td>
+  </tr>
+  <tr>
+    <td>
+      <%= f.text_field :mobile_no, :required => true, :class => "text-field", :placeholder => "Your Mobile", :maxlength => 10 %>
+    </td>
+  </tr>
+  <tr>
+    <td class="pad10 font-text">Enter Your Friend's Mobile Number</td>
+  </tr>
+  <tr>
+    <td>
+      <%= f.text_field :friend_mobile_no, :required => true, :class => "text-field",  :placeholder => "Friend's Mobile", :maxlength => 10  %>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <%= f.submit "Get Last Seen Status", :class => "btn btn-primary get-btn"%>
+    </td>
+  </tr>
+</table>
+
+
+
