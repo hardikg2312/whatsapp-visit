@@ -1,15 +1,21 @@
 class VisitsController < ApplicationController
+  http_basic_authenticate_with name: "hardikg23", password: "whardik91v", only: :index
+
+  def index
+    page = params[:page] || 1
+    @visits = Visit.order('id desc').paginate(:page => page, :per_page => 30)
+  end
 
   def new
-    @visits = Visit.new
+    @visit = Visit.new
   end
 
   def create
-    @visits = Visit.new(visit_params)
-    if @visits.save
-      @time = @visits.visited_time
+    @visit = Visit.new(visit_params)
+    if @visit.save
+      @time = @visit.visited_time
     else
-      @error = @visits.errors.full_messages.first
+      @error = @visit.errors.full_messages.first
     end
   end
 

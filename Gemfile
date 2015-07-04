@@ -43,3 +43,10 @@ group :development, :test do
   gem 'spring'
 end
 
+
+
+# heroku rails 4 assest precompile
+gem 'rails_12factor', group: :production
+
+## Gemfile for Rails 3+, Sinatra, and Merb
+gem 'will_paginate', '~> 3.0.6'
