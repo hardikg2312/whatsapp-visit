@@ -15,7 +15,7 @@
  */
 
  body{
-  background-image: url('bg2.jpg');
+  background-image: image-url('bg2.jpg');
  }
 
 /* Large desktop */
