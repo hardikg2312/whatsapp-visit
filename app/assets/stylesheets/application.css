@@ -15,7 +15,7 @@
  */
 
  body{
-  background-image: image-url('bg2.jpg');
+  background-image: url('http://res.cloudinary.com/dikkxjqju/image/upload/v1436022131/bg2_beddgk.jpg');
  }
 
 /* Large desktop */
