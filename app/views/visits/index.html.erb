@@ -5,6 +5,7 @@
       <td>Mobile_no</td>
       <td>Friend_mobile_no</td>
       <td>visited_time</td>
+      <td>visited_time</td>
       <td>visited_flag</td>
     </tr>
   </thead>
@@ -14,6 +15,7 @@
       <td><%= v.mobile_no %></td>
       <td><%= v.friend_mobile_no %></td>
       <td><%= v.visited_time %></td>
+      <td><%= days_ago(v.visited_time) if v.visited_time %></td>
       <td><%= v.visited_flag %></td>
     </tr>
   <% end %>
