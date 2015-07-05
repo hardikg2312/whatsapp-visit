@@ -85,10 +85,10 @@
   }
 
   .get-btn{
-    width: 80% !important;
+    width: 100% !important;
     height: 45px !important;
     font-weight: bold;
-    font-size: 1.1em;
+    font-size: 1.05em;
   }
 
   .time-container{
